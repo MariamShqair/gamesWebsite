@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-class Play extends Component {
-    state = {  }
-    render() { 
-        return ( <div>
-            play
-        </div> );
-    }
+const Play = (props) => {
+    console.log(props.items)
+    return ( <div>
+        <iframe src={props.items.link} height="500" width="700"></iframe>
+    </div> );
 }
  
 export default Play;

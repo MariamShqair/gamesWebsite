@@ -4,17 +4,18 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import { Route, Link, BrowserRouter as Router , Switch} from 'react-router-dom'
 import NavBar from './components/navbar'
-import Play from './components/pages/play'
+
+
 const routing = (
     <Router>
 
       <div>
+        <Switch>
         <Route exact path="/" component={App} />
         <Route  path="/girls-game" component={NavBar} />
-        <Route  path="/play" component={Play} />
-
+        </Switch>
       </div>
     </Router>
   )

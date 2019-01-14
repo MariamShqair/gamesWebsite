@@ -8,7 +8,7 @@ const Header = ({ menu }) => {
   return (
     <div className="background-header ">
       <div className="container ">
-        <div className="pl-3 pr-3 d-flex flex-column ">
+        <div className="d-flex flex-column ">
           <SocialLogo />
           <Menu menu={menu} />
         </div>

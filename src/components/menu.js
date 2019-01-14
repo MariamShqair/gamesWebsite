@@ -5,9 +5,9 @@ const Menu = ({menu}) => {
   return (
     <div className="menu">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           IndiGamer
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
