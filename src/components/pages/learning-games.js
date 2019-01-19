@@ -17,7 +17,7 @@ const LearningGames = ({match}) => {
               <div><i className="fa fa-heart-o" aria-hidden="true"></i> {game.likes}</div> <div><i className="fa fa-comments" aria-hidden="true"></i> {game.comments.length}</div> </div>
             <div className="card-main">
               <div className="image">
-              <img src={`/images/games/${game.image}`}/></div>
+              <img src={game.image}/></div>
               
               <div className="main-description">
               <Link  to={`/${game.id}`}>{game.name}</Link>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Body from "../body";
 import {getGames} from "../data/games"
-import axios from "axios";
+
 import AllGames from "../pages/allGames"
 class Home extends Component {
     state = { 

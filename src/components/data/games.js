@@ -3,7 +3,7 @@ export   const games =
    {
       "id": 1,
       "name": "Adventure Ho",
-      "image": "adventure-ho.jpg",
+      "image": "https://dodland.com/wp-content/uploads/2017/10/adventure-ho.jpg",
       "link": "https://external.kongregate-games.com/gamez/0001/6224/live/embeddable_16224.swf",
       "category":3,
       "likes":0,
@@ -19,7 +19,7 @@ export   const games =
     {
       "id": 2,
       "name": "Adventure Ho!",
-      "image": "winged-bullet.jpg",
+      "image": "https://dodland.com/wp-content/uploads/2017/10/adventure-ho.jpg",
       "link": "https://external.kongregate-games.com/gamez/0001/6224/live/embeddable_16224.swf",
       "category":3,
       "likes":0,
@@ -35,7 +35,7 @@ export   const games =
     {
       "id": 3,
       "name": "Winged Bullet",
-      "image": "winged-bullet.jpg",
+      "image": "http://www.puffgames.net/wp-content/uploads/2018/07/22677.jpg",
       "link": "https://external.kongregate-games.com/gamez/0000/6057/live/embeddable_6057.swf",
       "category":1,
       "likes":0,
@@ -63,7 +63,7 @@ export   const games =
     {
       "id": 4,
       "name": "Winged Bullet",
-      "image": "winged-bullet.jpg",
+      "image": "http://www.puffgames.net/wp-content/uploads/2018/07/22677.jpg",
       "link": "https://external.kongregate-games.com/gamez/0000/6057/live/embeddable_6057.swf",
       "category":2,
       "likes":0,
@@ -79,7 +79,7 @@ export   const games =
     {
       "id": 5,
       "name": "Winged Bullet",
-      "image": "winged-bullet.jpg",
+      "image": "http://www.puffgames.net/wp-content/uploads/2018/07/22677.jpg",
       "link": "https://external.kongregate-games.com/gamez/0000/6057/live/embeddable_6057.swf",
       "category":1,
       "likes":0,
@@ -95,7 +95,7 @@ export   const games =
     {
       "id": 6,
       "name": "Winged Bullet",
-      "image": "winged-bullet.jpg",
+      "image": "http://www.puffgames.net/wp-content/uploads/2018/07/22677.jpg",
       "link": "https://external.kongregate-games.com/gamez/0000/6057/live/embeddable_6057.swf",
       "category":2,
       "likes":0,
