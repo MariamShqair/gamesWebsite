@@ -2,8 +2,9 @@
   "name": "games",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mariamshqair.github.io/gamesWebsite/",
   "dependencies": {
-    "homepage": "https://mariamshqair.github.io/gamesWebsite/",
+    
     "axios": "^0.18.0",
     "bootstrap": "^4.2.1",
     "font-awesome": "^4.7.0",
