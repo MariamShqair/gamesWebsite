@@ -4,8 +4,7 @@ import { getCategoryById, games } from "../data/games";
 
 
 const GameCard = ({game}) => {
-  const category = getCategoryById(game.category)
-  console.log(category)
+  console.log(game.id)
   return (  <div className="card">
   <div className="card-header">
     <div><i class="fa fa-heart-o" aria-hidden="true"></i> {game.likes}</div> <div><i class="fa fa-comments" aria-hidden="true"></i> {game.comments.length}</div> </div>

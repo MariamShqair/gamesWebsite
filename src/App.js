@@ -11,6 +11,8 @@ import Home from "./components/pages/home";
 import Play from "./components/pages/play"
 import NotFound from "./components/pages/notFound"
 import CategoryPage from "./components/pages/categoryPage"
+import Contact from "./components/pages/contact"
+import About from "./components/pages/about"
 class App extends Component {
   state = {
     menu: ["All Games", "Puzzle", "Card", "Word"],
@@ -167,15 +169,20 @@ class App extends Component {
                 path="/cars-games"
                 component={CarsGames}
                 />
+                <Route
+
+path="/about"
+component={About}
+/>
+<Route
+
+                path="/contact"
+                component={Contact}
+              />
               <Route
                 path="/:id"
                 component={Play}
               />
-             
-             
-             
-             
-              
               <Route path="/not-found" component={NotFound} />
               <Redirect
                 from="/"
@@ -184,11 +191,18 @@ class App extends Component {
                 to="/"
               />
               <Redirect to="/not-found" />
+              
             </Switch>
-         </div> </main>
-          <div className="footer">created By:mariam shqair  @copy write 2019  </div>
+            
+         </div>
+         
+          </main>
+          
+
         </div>
+       
       </div>
+      
       </React.Fragment>
     );
   }

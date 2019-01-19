@@ -236,7 +236,7 @@ a:hover {
   margin-right:10px;
 }
 .main .category li{
-
+  font-size: 90%;
   list-style: none;
 }
 .category h3{
@@ -318,6 +318,12 @@ a:hover {
   width:100%;
   height: 500px;
   padding-bottom: 10px;
+}
+.play .comments{
+  width:80%;
+ }
+.play .comment{
+  background: #fff;
 }
 /* footer */
 

@@ -21,17 +21,25 @@ const Menu = ({menu}) => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            {menu.map((item, key) => (
-              <li key={key} className="nav-item active">
+          <li className="nav-item active">
                 <Link
-                  to={item.toLowerCase().replace(/ /g, "-")}
+                  to={`/contact`}
                   className="nav-link"
                   href="#"
                 >
-                  {item} <span className="sr-only">(current)</span>
+                  contact Us <span className="sr-only">(current)</span>
                 </Link>
               </li>
-            ))}
+
+              <li className="nav-item active">
+                <Link
+                  to={`/about`}
+                  className="nav-link"
+                  href="#"
+                >
+                  about Us <span className="sr-only">(current)</span>
+                </Link>
+              </li>
           </ul>
         </div>
       </nav>

@@ -2,9 +2,9 @@ export   const games =
 [
    {
       "id": 1,
-      "name": "Adventure Ho",
-      "image": "https://dodland.com/wp-content/uploads/2017/10/adventure-ho.jpg",
-      "link": "https://external.kongregate-games.com/gamez/0001/6224/live/embeddable_16224.swf",
+      "name": "Warlords: Heroes",
+      "image": "https://img-hws.pog.com/cloud/y8-thumbs/1114/thumbnail464x348.jpg",
+      "link": "https://external.kongregate-games.com/gamez/0002/3164/live/embeddable_23164.swf",
       "category":3,
       "likes":0,
       "comments": [
@@ -12,7 +12,7 @@ export   const games =
           "id": "1",
           "userId":1,
           "name": "ahmad",
-         "comment": "awsome game"
+         "comment": "awsome game I like it very much"
         }
       ]
     },
@@ -62,9 +62,9 @@ export   const games =
     },
     {
       "id": 4,
-      "name": "Winged Bullet",
-      "image": "http://www.puffgames.net/wp-content/uploads/2018/07/22677.jpg",
-      "link": "https://external.kongregate-games.com/gamez/0000/6057/live/embeddable_6057.swf",
+      "name": "MAD: Mutually Assured Destruction",
+      "image": "https://i.ytimg.com/vi/cC3zz0N7Vpc/hqdefault.jpg",
+      "link": "https://external.kongregate-games.com/gamez/0000/5196/live/embeddable_5196.swf",
       "category":2,
       "likes":0,
       "comments": [
@@ -72,15 +72,15 @@ export   const games =
           "id": "1",
           "userId":1,
           "name": "ahmad",
-         "comment": "awsome game"
+         "comment": "WooooooooooooooooooooooooooooooooooW"
         }
       ]
     },
     {
       "id": 5,
-      "name": "Winged Bullet",
-      "image": "http://www.puffgames.net/wp-content/uploads/2018/07/22677.jpg",
-      "link": "https://external.kongregate-games.com/gamez/0000/6057/live/embeddable_6057.swf",
+      "name": "Stellar Squad ",
+      "image": "http://funkypotato.com/images/2017/06/stellar-squad.jpg",
+      "link": "https://external.kongregate-games.com/gamez/0026/4222/live/embeddable_264222.swf",
       "category":1,
       "likes":0,
       "comments": [
@@ -88,15 +88,15 @@ export   const games =
           "id": "1",
           "userId":1,
           "name": "ahmad",
-         "comment": "awsome game"
+         "comment": "I would like to play this game always"
         }
       ]
     },
     {
       "id": 6,
-      "name": "Winged Bullet",
-      "image": "http://www.puffgames.net/wp-content/uploads/2018/07/22677.jpg",
-      "link": "https://external.kongregate-games.com/gamez/0000/6057/live/embeddable_6057.swf",
+      "name": "Castles of Talesworth",
+      "image": "http://dl.dropant.com/_img/604/604.jpg",
+      "link": "https://external.kongregate-games.com/gamez/0006/7999/live/embeddable_67999.swf",
       "category":2,
       "likes":0,
       "comments": [
@@ -135,7 +135,7 @@ export  function getCategories(){
   return categories;
 }
 export function getGameById(id){
-  const game = games.find(game => game.id = id)
+  const game = games.filter(g=>g.id == id)[0]
   return game;
 }
 export function getCategoryById(id){

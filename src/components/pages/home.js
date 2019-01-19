@@ -11,7 +11,7 @@ class Home extends Component {
         this.setState({data:getGames()})
       }
     render() { 
-
+        
         return (
         <div className="main-body mr-3 pl-3 ">
             <AllGames games={this.state.data}/> 
