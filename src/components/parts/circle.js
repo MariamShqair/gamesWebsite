@@ -1,14 +1,9 @@
-import React, { Component } from 'react';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-const Circle = ({}) => {
-    library.add(faEnvelope )
+import React from 'react';
+const Circle = (props) => {
     return (
-         <div className="circle">
+         <div className="circle ">
             <a href="#" >
-            <FontAwesomeIcon icon={faEnvelope} />
+            <i className={props.classN}></i>
             </a>
         </div> );
 }

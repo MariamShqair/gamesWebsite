@@ -202,19 +202,21 @@ a:hover {
   
 }
 .social-logo .groupCircle .circle{
-  
-  text-align: center;
-  align-items: center;
-
+  box-sizing: border-box;
   width:30px;
   height: 30px;
   border: 2px solid white;
   border-radius: 50%;
   margin-right: 5px;
+  position: relative;
+  padding-left: 5%;
+  
 }
   .social-logo .groupCircle .circle a{
-    margin:auto;
+    position: absolute;
+    
     color:#fff;
+    margin-top: 20%;
   }
 /* main */
 .main {
@@ -228,8 +230,10 @@ a:hover {
   flex:1;
   background: #ffffff24;
   border-radius: 5px;
-  width:300px;
+  
   text-align: center;
+  padding:10%;
+  margin-right:10px;
 }
 .main .category li{
 
@@ -241,14 +245,18 @@ a:hover {
   border-bottom: #fff;
 }
 .category  a:hover{
-  color: #fff;
-  font-size: 18px;
+  color: #ffffff;
+  -ms-transform: skewX(20deg); /* IE 9 */
+  -webkit-transform: skewX(20deg); /* Safari */
+  transform: skewX(20deg); /* Standard syntax */
 }
 
 
 /* body */
 .main .main-body {
   flex:2;
+
+
 }
 .main .main-body h3{
   font-family: 'Abel', sans-serif;
@@ -275,11 +283,14 @@ a:hover {
 }
 .main .main-body  .cards .card .image{
   width:100%;
-  height: 300px;
+  height:100px;
+  padding:10px 20px;
+  
 }
 .main .main-body  .cards .card .image img{
   width:100%;
   height: 100%;
+  
 }
 .main .main-body  .cards  .main-description{
   text-align: center;
@@ -293,7 +304,28 @@ a:hover {
   font-size: 15px;
   text-decoration: none;
 }
+.play{
+  width: 100%;
+  height: 100%;
+  margin-left:10px;
+  display: flex;
+  flex-direction: column;
+}
+.play h3{
+  padding-bottom: 10px;
+}
+.play .game embed{
+  width:100%;
+  height: 500px;
+  padding-bottom: 10px;
+}
+/* footer */
 
-
-/* Card in body */
-
+.footer{
+  margin:0 auto;
+  text-align: center;
+  color:#fff;
+  padding:10px 0;
+  font-size: 12px;
+  bottom: 0;
+}

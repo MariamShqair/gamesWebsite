@@ -1,23 +1,25 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React from 'react';
+import {  Link } from "react-router-dom";
+import { categories } from './data/games';
 
-const SideBar = ({gameCategory}) => {
+const SideBar = () => {
+    console.log(categories)
     return ( <div>
     <div className="category">
     <h3>Category</h3>
     <ul>
+      {categories.map((item,key) => <li key={key} className="nav-item ">
+                  <Link
+                    to={`/${item.name}/`}
+                    className="nav-link"
+                    href="#"
+                   
+                  >
+                    {item.lable} <span className="sr-only"></span>
+                  </Link>
+            </li>)}
+            
    
-        {gameCategory.map((item ,key)=> (<li key={key} className="nav-item ">
-                <Link
-                  to={item}
-                  className="nav-link"
-                  href="#"
-                >
-                  {item} <span className="sr-only"></span>
-                </Link>
-              </li>))}
-       
-       
     </ul>
      </div>
      </div>);

@@ -1,17 +1,20 @@
-import React, { Component } from "react";
-import { Link ,Route} from 'react-router-dom'
+import React from "react";
+import { Link } from 'react-router-dom'
+import { getCategoryById, games } from "../data/games";
 
 
-const GameCard = (props) => {
+const GameCard = ({game}) => {
+  const category = getCategoryById(game.category)
+  console.log(category)
   return (  <div className="card">
   <div className="card-header">
-    <div>likes: {props.likes}</div> <div>comments: {props.comments}</div> </div>
+    <div><i class="fa fa-heart-o" aria-hidden="true"></i> {game.likes}</div> <div><i class="fa fa-comments" aria-hidden="true"></i> {game.comments.length}</div> </div>
   <div className="card-main">
     <div className="image">
-    <img src={props.image}/></div>
+    <img src={`/images/games/${game.image}`}/></div>
     
     <div className="main-description">
-    <a onClick={()=>props.handlClick(props)}>{props.name}</a>
+    <Link  to={`/${game.id}`}>{game.name}</Link>
     
      </div>
   </div>

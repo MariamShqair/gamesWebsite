@@ -1,10 +1,8 @@
-
-
 import React, { Component } from 'react';
 import { getGamesByCategoryName } from '../data/games';
 import { Link } from 'react-router-dom'
 
-const LearningGames = ({match}) => {
+const CategoryPage = ({match}) => {
   const  urll = match.path.replace("/",'')
     console.log(match)
     const games = getGamesByCategoryName(urll);
@@ -14,7 +12,7 @@ const LearningGames = ({match}) => {
      {games.map((game, key) => (
             <div key={key} className="card">
             <div className="card-header">
-              <div><i className="fa fa-heart-o" aria-hidden="true"></i> {game.likes}</div> <div><i className="fa fa-comments" aria-hidden="true"></i> {game.comments.length}</div> </div>
+              <div><i className="fa fa-heart-o" aria-hidden="true"></i> {game.likes}</div> <div><i class="fa fa-comments" aria-hidden="true"></i> {game.comments.length}</div> </div>
             <div className="card-main">
               <div className="image">
               <img src={`/images/games/${game.image}`}/></div>
@@ -31,4 +29,4 @@ const LearningGames = ({match}) => {
     </div> );
 }
  
-export default LearningGames;
+export default CategoryPage;

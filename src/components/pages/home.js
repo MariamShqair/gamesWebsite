@@ -1,8 +1,22 @@
 import React, { Component } from 'react';
 import Body from "../body";
+import {getGames} from "../data/games"
+import axios from "axios";
+import AllGames from "../pages/allGames"
+class Home extends Component {
+    state = { 
+        data:[]
+     }
+    componentDidMount() {
+        this.setState({data:getGames()})
+      }
+    render() { 
 
-const Home = (props) => {
-    return ( <Body games={props.games}/> );
+        return (
+        <div className="main-body mr-3 pl-3 ">
+            <AllGames games={this.state.data}/> 
+        </div> );
+    }
 }
  
 export default Home;
