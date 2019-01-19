@@ -4,24 +4,24 @@ self.__precacheManifest = [
     "url": "/gamesWebsite/static/media/fontawesome-webfont.af7ae505.woff2"
   },
   {
-    "revision": "094d62e1ecb48d9219e5",
-    "url": "/gamesWebsite/static/css/main.b4939ee7.chunk.css"
+    "revision": "723d0966e801f2a63561",
+    "url": "/gamesWebsite/static/css/main.35315d62.chunk.css"
   },
   {
     "revision": "912ec66d7572ff821749319396470bde",
     "url": "/gamesWebsite/static/media/fontawesome-webfont.912ec66d.svg"
   },
   {
-    "revision": "daaf07bccf7042c8c7e6",
-    "url": "/gamesWebsite/static/js/1.daaf07bc.chunk.js"
+    "revision": "dbbdad04710a49c714b3",
+    "url": "/gamesWebsite/static/js/1.dbbdad04.chunk.js"
   },
   {
     "revision": "cab9fefebd9b6f16cda0",
     "url": "/gamesWebsite/static/js/runtime~main.cab9fefe.js"
   },
   {
-    "revision": "094d62e1ecb48d9219e5",
-    "url": "/gamesWebsite/static/js/main.094d62e1.chunk.js"
+    "revision": "723d0966e801f2a63561",
+    "url": "/gamesWebsite/static/js/main.723d0966.chunk.js"
   },
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "/gamesWebsite/static/media/fontawesome-webfont.b06871f2.ttf"
   },
   {
-    "revision": "daaf07bccf7042c8c7e6",
-    "url": "/gamesWebsite/static/css/1.17e9ea32.chunk.css"
+    "revision": "dbbdad04710a49c714b3",
+    "url": "/gamesWebsite/static/css/1.087d695c.chunk.css"
   },
   {
-    "revision": "a70d15d08ddb022c881edc520007dbc3",
+    "revision": "5422dea2a0d9e8d26b3828dd049cfa13",
     "url": "/gamesWebsite/index.html"
   }
 ];
