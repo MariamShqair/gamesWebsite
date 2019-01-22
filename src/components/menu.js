@@ -5,7 +5,7 @@ const Menu = ({menu}) => {
   return (
     <div className="menu">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <Link className="navbar-brand" to="/gamesWebsite/">
+        <Link className="navbar-brand" to="/gamesWebsite">
           IndiGamer
         </Link>
         <button

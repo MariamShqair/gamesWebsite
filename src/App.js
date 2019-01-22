@@ -31,7 +31,7 @@ class App extends Component {
             <Switch>
               <Route
                 exact
-                path="/gamesWebsite/"
+                path="/gamesWebsite"
                 component={Home}
               /> 
               <Route
@@ -51,10 +51,10 @@ class App extends Component {
                 />
                 <Route
 
-path="/gamesWebsite/about"
-component={About}
-/>
-<Route
+                path="/gamesWebsite/about"
+                component={About}
+                />
+                <Route
 
                 path="/gamesWebsite/contact"
                 component={Contact}
