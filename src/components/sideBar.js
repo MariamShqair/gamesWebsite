@@ -10,10 +10,9 @@ const SideBar = () => {
     <ul>
       {categories.map((item,key) => <li key={key} className="nav-item ">
                   <Link
-                    to={`/${item.name}/`}
+                    to={`/gamesWebsite/${item.name}/`}
                     className="nav-link"
                     href="#"
-                   
                   >
                     {item.lable} <span className="sr-only"></span>
                   </Link>

@@ -13,7 +13,7 @@ const GameCard = ({game}) => {
     <img src={game.image}/></div>
     
     <div className="main-description">
-    <Link  to={`/${game.id}`}>{game.name}</Link>
+    <Link  to={`/gamesWebsite/${game.id}`}>{game.name}</Link>
     
      </div>
   </div>

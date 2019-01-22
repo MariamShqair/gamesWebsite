@@ -1,16 +1,17 @@
 import React, { Component } from "react";
-import HeaderSlider from "./headerSlider";
 import SocialLogo from "./socialLogo";
 import Menu from "./menu";
-import Slider from "./slider";
+import {getMenu} from "./data/games"
 
-const Header = ({ menu }) => {
+
+const Header = () => {
+  
   return (
     <div className="background-header ">
       <div className="container ">
         <div className="d-flex flex-column ">
           <SocialLogo />
-          <Menu menu={menu} />
+          <Menu menu={getMenu()} />
         </div>
       </div>
     </div>

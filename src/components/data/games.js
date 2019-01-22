@@ -127,12 +127,15 @@ export const categories =[
   }
 
 ]
-  
+export const menu=["about","contact"]
 export  function getGames(){
     return games.filter(g => g);
 }
 export  function getCategories(){
   return categories;
+}
+export function getMenu(){
+  return menu.filter(m => m);
 }
 export function getGameById(id){
   const game = games.filter(g=>g.id == id)[0]
@@ -155,4 +158,16 @@ export function getGamesByCategoryName(categoryName){
     }
   }
   return gamesByCat
+}
+export function setComment(game,comment){
+ 
+  const comm = {
+    id:game.comments.length +1,
+    userId : 1,
+    name :"ahmad",
+    comment:comment
+  }
+  games.filter(g =>g.id===game.id)[0].comments.push(comm)
+  // const g = games.filter(g => g.id === game.id)[0]
+  // console.log(g);
 }

@@ -14,6 +14,7 @@ class Home extends Component {
         
         return (
         <div className="main-body mr-3 pl-3 ">
+            <h4>All Games</h4>
             <AllGames games={this.state.data}/> 
         </div> );
     }

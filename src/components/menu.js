@@ -5,7 +5,7 @@ const Menu = ({menu}) => {
   return (
     <div className="menu">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/gamesWebsite/">
           IndiGamer
         </Link>
         <button
@@ -21,25 +21,19 @@ const Menu = ({menu}) => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-          <li className="nav-item active">
-                <Link
-                  to={`/contact`}
-                  className="nav-link"
-                  href="#"
-                >
-                  contact Us <span className="sr-only">(current)</span>
-                </Link>
-              </li>
+          {menu.map((m,key) =>
+            <li className="nav-item active" key={key} >
+            <Link
+              to={`/gamesWebsite/${m}`}
+              className="nav-link"
+              href="#"
+            >
+              {m} <span className="sr-only">(current)</span>
+            </Link>
+          </li>
 
-              <li className="nav-item active">
-                <Link
-                  to={`/about`}
-                  className="nav-link"
-                  href="#"
-                >
-                  about Us <span className="sr-only">(current)</span>
-                </Link>
-              </li>
+          )}
+         
           </ul>
         </div>
       </nav>

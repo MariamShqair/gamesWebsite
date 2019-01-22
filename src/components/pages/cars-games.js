@@ -1,16 +1,18 @@
 
 
-import React, { Component } from 'react';
+import React from 'react';
 import { getGamesByCategoryName } from '../data/games';
 import { Link } from 'react-router-dom'
 
 const CarsGames = ({match}) => {
-  const  urll = match.path.replace("/",'')
+  const  urll = match.path.replace("/gamesWebsite/",'')
     console.log(match)
     const games = getGamesByCategoryName(urll);
     console.log(games)
     return ( <div className="main-body mr-3 pl-3 ">
+    <h4>Cars Games</h4>
      <div className="cards">
+     
      {games.map((game, key) => (
             <div key={key} className="card">
             <div className="card-header">
@@ -20,7 +22,7 @@ const CarsGames = ({match}) => {
               <img src={game.image}/></div>
               
               <div className="main-description">
-              <Link  to={`/${game.id}`}>{game.name}</Link>
+              <Link  to={`/gamesWebsite/${game.id}`}>{game.name}</Link>
               
                </div>
             </div>
